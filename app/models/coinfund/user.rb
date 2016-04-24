@@ -1,5 +1,6 @@
 module Coinfund
   class User < ApplicationRecord
+    include TableName
     include ActiveModel::SecurePassword
     
     # User has a secure password.
