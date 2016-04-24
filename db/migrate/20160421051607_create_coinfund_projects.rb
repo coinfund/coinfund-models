@@ -4,7 +4,7 @@ class CreateCoinfundProjects < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :homepage
       t.integer :status, default: 0
-      t.references :sector, foreign_key: true
+      t.references :sector, foreign_key: true, table: 'coinfund_sectors'
 
       t.timestamps
     end
