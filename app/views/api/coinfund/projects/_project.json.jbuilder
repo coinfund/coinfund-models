@@ -7,5 +7,3 @@ if project.association_cached?(:sector)
 end
 
 json.watching project.watching
-json.engagement project.engagement
-json.long project.long
